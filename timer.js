@@ -15,8 +15,8 @@ function timer(wrapClass, deadLine) {
     };
   }
 
-  function setClock(selector, endTime) {
-    const timer = document.querySelector(`.${selector}`),
+  function setClock(className, endTime) {
+    const timer = document.querySelector(`.${className}`),
       days = timer.querySelector('.days'),
       hours = timer.querySelector('.hours'),
       minutes = timer.querySelector('.minutes'),
