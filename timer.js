@@ -1,6 +1,6 @@
 function timer(wrapClass, deadLine) {
-  function getTimeRamaining(endTime) {
-    const t = Date.parse(endTime) - Date.parse(new Date()),
+  function getTimeRamaining(deadLine) {
+    const t = Date.parse(deadLine) - Date.parse(new Date()),
       seconds = Math.floor((t / 1000) % 60),
       minutes = Math.floor((t / 1000 / 60) % 60),
       hours = Math.floor((t / 1000 / 60 / 60) % 24),
@@ -15,7 +15,7 @@ function timer(wrapClass, deadLine) {
     };
   }
 
-  function setClock(className, endTime) {
+  function setClock(className, deadLine) {
     const timer = document.querySelector(`.${className}`),
       days = timer.querySelector('.days'),
       hours = timer.querySelector('.hours'),
@@ -24,7 +24,7 @@ function timer(wrapClass, deadLine) {
       timeInterval = setInterval(updateClock, 1000);
 
     function updateClock() {
-      const time = getTimeRamaining(endTime);
+      const time = getTimeRamaining(deadLine);
 
       function checkZero(num) {
         if (num >= 10) {
