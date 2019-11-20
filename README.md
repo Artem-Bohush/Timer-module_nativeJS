@@ -1,5 +1,5 @@
 # Timer-module_nativeJS
-  This is a simple code for timer on your site. It contains countdown of days, hours, minutes and seconds.
+  This is a simple code for timer on your site. It contains countdown of days, hours, minutes and seconds. Any changing is up to you.
 ## Usage
   Your layout should contains next code structure:
 ```
