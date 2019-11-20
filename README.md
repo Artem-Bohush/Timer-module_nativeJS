@@ -4,7 +4,7 @@
   Your layout should contains next code structure:
 ```
 <div class="timer">
-  <div class="timer-numbers" id="timer">
+  <div class="timer-items" id="timer">
     <span class="days">00</span>
     <span>:</span>
     <span class="hours">00</span>
