@@ -15,3 +15,7 @@
   </div>
 </div>
 ```
+  Next step - add timer.js to you project and import this module. Then just call a function with passing corresponding classes to it(in the appropriate order):
+  ```
+  timer('wrapper-class', '2019-12-31')
+  ```
