@@ -51,4 +51,5 @@ function timer(wrapClass, deadLine) {
   setClock(wrapClass, deadLine);
 }
 
-timer('wrapper-class', '2019-12-31');
+// after importing the module - call function with passing corresponding classes to it
+// timer('wrapper-class', '2019-12-31');
